@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>  
+<!DOCTYPE hibernate-configuration PUBLIC  
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"  
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<property name="hibernate.enable_lazy_load_no_trans">true</property>
+		<property name="hibernate.hbm2ddl.auto"> update </property>
+		<property name="connection.driver_class">org.mariadb.jdbc.Driver</property>
+		<property name="connection.url">jdbc:mariadb://localhost:3306/hibernatesba</property>
+		<property name="connection.username">root</property>
+		<property name="connection.password">Radeon5700XT</property>
+		<property name="dialect">org.hibernate.dialect.MariaDB53Dialect</property>
+		<property name="hibernate.show_sql">false= </property>
+		<property name="hibernate.format_sql">true </property>
+
+		<!-- Mapping entity file -->
+		<mapping class="jpa.entitymodels.Course" />
+		<mapping class="jpa.entitymodels.Student" />
+
+	</session-factory>
+</hibernate-configuration>
