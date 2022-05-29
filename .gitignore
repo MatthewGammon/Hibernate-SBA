@@ -41,3 +41,6 @@ local.properties
 .loadpath
 .factorypath
 .env
+
+## Hibernate
+src/main/java/hibernate.cfg.xml
